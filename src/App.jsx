@@ -397,6 +397,11 @@ function App() {
           </div>
         </div>
       )}
+
+      <footer>
+        Created by LittleBit | <a href="https://github.com/littlebitstudios/erc681-generator">GitHub</a> | <a href="https://littlebitstudios.com">Main Website</a>
+      </footer>
+
       {toast && <div className="toast">{toast}</div>}
     </>
   )
