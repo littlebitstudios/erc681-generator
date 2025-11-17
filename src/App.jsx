@@ -19,13 +19,13 @@ function App() {
   const [toast, setToast] = useState(null)
 
   const knownChains = [
-    {id:1, name:"Ethereum Mainnet"},
-    {id:56, name:"BNB Smart Chain"},
-    {id:8453, name:"Base"},
-    {id:10, name:"OP Mainnet"},
-    {id:42161, name:"Arbitrum One"},
-    {id:43114, name:"Avalanche C-Chain"},
-    {id:137, name:"Polygon PoS"},
+    { id: 1, name: "Ethereum Mainnet" },
+    { id: 56, name: "BNB Smart Chain" },
+    { id: 8453, name: "Base" },
+    { id: 10, name: "OP Mainnet" },
+    { id: 42161, name: "Arbitrum One" },
+    { id: 43114, name: "Avalanche C-Chain" },
+    { id: 137, name: "Polygon PoS" },
   ]
 
   // This array contains the options for the <select> menu
