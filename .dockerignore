@@ -1,0 +1,10 @@
+# Exclude the large node_modules folder from the build context
+node_modules
+
+# Exclude common development and temporary files
+.git
+.gitignore
+.env
+npm-debug.log
+logs
+tmp
