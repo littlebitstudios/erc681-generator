@@ -8,6 +8,11 @@ Open the page and start by pasting in the wallet address that will receive the f
 
 There is a list of well known token-chain pairs available, and a list of known chain IDs available if using a custom token.
 
+# Where to use
+**Production Website:** coming soon
+
+**Self-Host:** Project is available as a Docker/Podman container. 
+
 # Credits/License
 The Ethereum logo used in the app's favicon came from https://ethereum.org/assets/#brand.
 
