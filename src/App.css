@@ -7,6 +7,10 @@ body {
   text-align: center;
 }
 
+body a {
+  color: cyan;
+}
+
 form {
   /* Desktop-friendly fixed max width with full-width inputs */
   max-width: 500px;
@@ -117,6 +121,10 @@ button:active {
   margin-top: 1rem;
 }
 
+footer {
+  margin: 15px;
+}
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 600px) {
   body {
@@ -164,11 +172,11 @@ button:active {
   left: 50%;
   transform: translateX(-50%);
   bottom: 1.25rem;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0, 0, 0, 0.85);
   color: white;
   padding: 0.6rem 1rem;
   border-radius: 6px;
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   z-index: 1000;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
