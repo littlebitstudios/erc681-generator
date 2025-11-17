@@ -9,7 +9,7 @@ Open the page and start by pasting in the wallet address that will receive the f
 There is a list of well known token-chain pairs available, and a list of known chain IDs available if using a custom token.
 
 # Where to use
-**Production Website:** coming soon
+**Production Website:** You can use this app at https://erc681.littlebitstudios.com
 
 **Self-Host:** Project is available as a Docker/Podman container. 
 
