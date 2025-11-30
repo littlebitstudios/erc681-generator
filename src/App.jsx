@@ -26,6 +26,7 @@ function App() {
     { id: 42161, name: "Arbitrum One" },
     { id: 43114, name: "Avalanche C-Chain" },
     { id: 137, name: "Polygon PoS" },
+    { id: 143, name: "Monad" },
   ]
 
   // This array contains the options for the <select> menu
