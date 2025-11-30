@@ -283,6 +283,37 @@ function App() {
     }
   }
 
+  async function resolveEnsName(){
+    const ensName = recieveAddr
+    let resolvedAddr = ""
+
+    // 1. Await the fetch call to get the Response object.
+    const response = await fetch(`https://enstate.rs/u/${ensName}`);
+    
+    // Check if the response was successful (e.g., status 200)
+    // and handle potential network/server errors before proceeding.
+    if (!response.ok) {
+        setToast(`Error fetching ENS profile: ${response.statusText}`);
+        setReceiveAddr(""); // Clear the address if there was an error
+        return; // Exit the function
+    }
+
+    // 2. Await the .json() call to get the parsed JSON data.
+    const ensProfile = await response.json();
+
+    // 3. Check for the address in the parsed JSON data.
+    if (ensProfile && ensProfile.address){
+      setToast(`Found ${ensName}'s address!`)
+      resolvedAddr = ensProfile.address;
+    }
+    else {
+      setToast("Could not get an address from that ENS name.");
+      resolvedAddr = ""; // Ensure resolvedAddr is empty on failure
+    }
+    
+    setReceiveAddr(resolvedAddr);
+}
+
   return (
     <>
       <header style={{ marginBottom: '2rem' }}>
@@ -301,8 +332,9 @@ function App() {
                 Connect Wallet
               </button>
             )}
+            <button style={{marginLeft:"10px"}} type="button" onClick={(e) => {resolveEnsName()}}>Resolve ENS Name</button>
           </div>
-          <small className="helper-text">If you have a wallet in your browser, connect it to autofill your address. In some cases this may happen automatically.</small>
+          <small className="helper-text">If you have a wallet in your browser, connect it to autofill your address. In some cases this may happen automatically.<br/>You can also enter an ENS name in the Receiver Address box and click "Resolve ENS Name".</small>
         </div>
         <div className="form-group">
           <label htmlFor="to_address">Receiver Address</label>
