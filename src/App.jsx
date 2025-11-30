@@ -46,7 +46,9 @@ function App() {
     { id: "pol:POL", label: "POL (Polygon PoS)" },
     { id: "pol:USDC", label: "USDC (Polygon PoS)" },
     { id: "avax-c:AVAX", label: "AVAX (Avalanche C-Chain)" },
-    { id: "avax-c:USDC", label: "USDC (Avalanche C-Chain)" }
+    { id: "avax-c:USDC", label: "USDC (Avalanche C-Chain)" },
+    { id: "mon:MON", label: "MON (Monad)" },
+    { id: "mon:USDC", label: "USDC (Monad)" },
   ];
 
   const presetTokens = {
@@ -108,6 +110,16 @@ function App() {
     "avax-c:USDC": {
       chainId: "43114",
       tokenAddr: "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+      tokenDecimals: "6",
+    },
+    "mon:MON": {
+      chainId: "143",
+      tokenAddr: "",
+      tokenDecimals: "18",
+    },
+    "mon:USDC": {
+      chainId: "143",
+      tokenAddr: "0x754704Bc059F8C67012fEd69BC8A327a5aafb603",
       tokenDecimals: "6",
     },
   };
